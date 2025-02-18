@@ -16,5 +16,13 @@ Gem::Specification.new do |s|
         "ip2location_rails.gemspec",
         "lib/ip2location_rails.rb",
     ]
+    if s.respond_to?(:metadata=)
+        s.metadata = {
+          "bug_tracker_uri" => "https://github.com/ip2location/ip2location-rails/issues",
+          "documentation_uri" => "https://www.rubydoc.info/gems/ip2location_rails",
+          "homepage_uri" => "https://www.ip2location.com",
+          "source_code_uri" => "https://github.com/ip2location/ip2location-rails",
+        }
+      end
     s.add_runtime_dependency 'ip2location_ruby', '>= 8.7.3'
 end
