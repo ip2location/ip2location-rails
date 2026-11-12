@@ -65,6 +65,9 @@ class TestController < ApplicationController
     @district = location_service.district
     @asn = location_service.asn
     @as = location_service.as
+    @as_domain = location_service.as_domain
+    @as_usagetype = location_service.as_usagetype
+    @as_cidr = location_service.as_cidr
   end
 end
 ```
@@ -95,6 +98,9 @@ end
 <p>District: <%= @district %></p>
 <p>ASN: <%= @asn %></p>
 <p>AS: <%= @as %></p>
+<p>AS Domain: <%= @as_domain %></p>
+<p>AS Usage Type: <%= @as_usagetype %></p>
+<p>AS CIDR: <%= @as_cidr %></p>
 ```
 9. Add the following line into the *config/routes.rb* file after the `Rails.application.routes.draw do` line.
 ```ruby

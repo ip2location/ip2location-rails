@@ -109,4 +109,16 @@ class Ip2locationRails
     def as
         location['as']
     end
+
+    def as_domain
+        location['as_domain']
+    end
+
+    def as_usagetype
+        location['as_usagetype']
+    end
+
+    def as_cidr
+        location['as_cidr']
+    end
 end
